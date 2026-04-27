@@ -139,8 +139,8 @@ alias r="R_AUTO_START=true nvim"
 # Git aliases
 alias gcm="git commit -m"
 alias gaa="git add ."
-alias gph="git push -u origin"
-alias get="git pull origin main"
+alias push="git push -u origin"
+alias pull="git pull origin main"
 
 # bun completions
 [ -s "/home/lain/.bun/_bun" ] && source "/home/lain/.bun/_bun"
@@ -165,3 +165,10 @@ compinit
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+export EDITOR=nvim
+export VISUAL=nvim
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
