@@ -140,7 +140,9 @@ alias r="R_AUTO_START=true nvim"
 alias gcm="git commit -m"
 alias gaa="git add ."
 alias push="git push -u origin"
-alias pull="git pull origin main"
+alias pull="git pull origin"
+alias sw="git switch origin"
+alias swc="git switch -c origin"
 
 # bun completions
 [ -s "/home/lain/.bun/_bun" ] && source "/home/lain/.bun/_bun"
