@@ -143,6 +143,9 @@ alias push="git push -u origin"
 alias pull="git pull origin"
 alias sw="git switch origin"
 alias swc="git switch -c origin"
+alias fetch="git fetch"
+alias switch="git switch"
+alias switchc="git switch -c"
 
 # bun completions
 [ -s "/home/lain/.bun/_bun" ] && source "/home/lain/.bun/_bun"
